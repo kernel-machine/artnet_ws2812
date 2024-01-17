@@ -1,0 +1,10 @@
+services:
+  led_controller:
+    build: .
+    privileged: true
+    ports:
+      - "6454:6454/udp"
+    environment:
+    - LED_COUNT=200
+    - UNIVERSE=1
+    - LED_PER_SEGMENT=2
