@@ -1,10 +1,8 @@
 services:
   led_controller:
-    build: .
+    image: kernelmachine/led_controller:latest
     privileged: true
     ports:
       - "6454:6454/udp"
-    environment:
-    - LED_COUNT=200
-    - UNIVERSE=1
-    - LED_PER_SEGMENT=2
+    env_file:
+    - ./default.env
