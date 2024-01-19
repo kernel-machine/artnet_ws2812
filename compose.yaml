@@ -1,0 +1,8 @@
+services:
+  artnet_ws2812:
+    image: kernelmachine/artnet_ws2812:latest
+    privileged: true
+    ports:
+      - "6454:6454/udp"
+    env_file:
+    - ./default.env
