@@ -19,8 +19,8 @@ Editing the file default.env is possible to change:
 - 5 Blue (Segment 1)
 - 6 ...
  - 7  ...
-- N-2 Red (segment 1)
-- N-1 Green (Segment 1)
-- N Blue (Segment 1)
+- N-2 Red (segment k)
+- N-1 Green (Segment k)
+- N Blue (Segment k)
 ### HOW TO WIRE
 GPIO used is 21
